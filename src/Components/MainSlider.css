@@ -1,0 +1,44 @@
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.swiper-slide {
+  background-size: cover;
+  width: 400px; /* Slide width */
+  height: 300px; /* Slide height */
+  
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%; /* Ensure the image takes up the full slide */
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover; /* Or use 'cover' depending on the desired effect */
+}
+
+
+
+.arrows:hover{
+  transition: 0.3s ease-in-out;
+  /* background-color: white; */
+  cursor: pointer;
+  border: 1px solid red ;
+}
+
+.name-overlay {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.SwiperSlide:hover .name-overlay {
+  opacity: 1;
+}

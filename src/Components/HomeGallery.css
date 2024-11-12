@@ -1,0 +1,46 @@
+.galleryImages:hover{
+  box-shadow: rgba(251, 39, 39, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.galleryImages {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .galleryImages {
+  transform: scale(1.02);
+  /* border-radius: 20px; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.image-name {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.like-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.like-icon:hover {
+  transform: scale(1.2);
+  color: red;
+}
